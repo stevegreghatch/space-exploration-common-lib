@@ -13,5 +13,6 @@ setup(
     ],
     author='Steven Hatch',
     author_email='stevegreghatch@gmail.com',
-    description='A common library for space exploration projects'
+    description='A common library for space exploration projects',
+    long_description='A common library for space exploration projects'
 )
