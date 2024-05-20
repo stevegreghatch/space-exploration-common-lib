@@ -3,7 +3,7 @@ from os import getenv
 
 setup(
     name='space-exploration-common-lib',
-    version=getenv('VERSION', default='v0.0.1'),
+    version=getenv('VERSION', default='v0.0.5'),
     packages=find_packages(exclude=['tests']),
     package_dir={'space_exploration_common_lib': 'src/space_exploration_common_lib'},
     python_requires='>=3.12, <4',
