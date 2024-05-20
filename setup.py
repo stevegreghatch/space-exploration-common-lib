@@ -4,8 +4,8 @@ from os import getenv
 setup(
     name='space-exploration-common-lib',
     version=getenv('VERSION', '0.0.1'),
-    packages=find_packages(exclude=['tests']),
-    package_dir={'space_exploration_common_lib': 'src/space_exploration_common_lib'},
+    packages=find_packages(where='src', exclude=['tests']),
+    package_dir={'': 'src'},
     python_requires='>=3.12, <4',
     include_package_data=True,
     install_requires=[
