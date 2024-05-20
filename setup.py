@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-from os import getenv, path
+from os import getenv
 
 setup(
     name='space-exploration-common-lib',
