@@ -6,7 +6,8 @@ from ..model.enum.Missions import Missions
 
 
 class Astronaut(BaseModel):
-    name: str
+    first_name: str
+    last_name: str
     programs: List[Programs]
     missions: List[Missions]
     image_url: str
