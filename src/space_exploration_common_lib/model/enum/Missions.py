@@ -1,5 +1,4 @@
 from enum import Enum
-from pydantic import BaseModel
 
 
 class Missions(str, Enum):
@@ -16,7 +15,3 @@ class Missions(str, Enum):
     APOLLO_1 = "Apollo 1"
     APOLLO_7 = "Apollo 7"
     APOLLO_14 = "Apollo 14"
-
-
-class MissionsModel(BaseModel):
-    mission: Missions
