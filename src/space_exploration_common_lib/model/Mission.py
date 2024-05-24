@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from decimal import Decimal
 from bson import Decimal128
-from ..Duration import Duration
+from src.space_exploration_common_lib.model.Duration import Duration
 
 
 class Mission(BaseModel):
@@ -17,6 +17,7 @@ class Mission(BaseModel):
     perigee_mi: int
     velocity_max_mph: int
     miss_mi: Decimal
+    image_url: str
 
     def __init__(self, **data):
         if 'miss_mi' in data and isinstance(data['miss_mi'], Decimal128):

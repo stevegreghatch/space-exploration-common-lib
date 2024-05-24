@@ -2,6 +2,6 @@ from enum import Enum
 
 
 class Programs(str, Enum):
-    MERCURY = "Mercury"
-    GEMINI = "Gemini"
-    APOLLO = "Apollo"
+    MERCURY = "MERCURY"
+    GEMINI = "GEMINI"
+    APOLLO = "APOLLO"
