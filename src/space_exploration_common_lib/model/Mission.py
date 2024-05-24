@@ -3,15 +3,13 @@ from decimal import Decimal
 from bson import Decimal128
 from .Duration import Duration
 from typing import List
-from .Astronaut import Astronaut
-from .Program import Program
 
 
 class Mission(BaseModel):
-    name: str
+    mission_name: str
+    astronauts: List[str]
+    program: str
     call_sign: str
-    program: Program
-    astronauts: List[Astronaut]
     image_url: str
     spacecraft_number: int
     launch_time: str
