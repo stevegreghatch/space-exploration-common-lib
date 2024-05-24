@@ -2,12 +2,12 @@ from pydantic import BaseModel
 from decimal import Decimal
 from bson import Decimal128
 from .Duration import Duration
-from typing import List
+from ..astronaut.AstronautNames import AstronautNames
 
 
 class Mission(BaseModel):
     mission_name: str
-    astronauts: List[str]
+    astronauts: AstronautNames
     program: str
     call_sign: str
     image_url: str

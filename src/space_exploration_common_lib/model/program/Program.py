@@ -1,8 +1,9 @@
 from pydantic import BaseModel
-from typing import List
+
+from ..mission.MissionNames import MissionNames
 
 
 class Program(BaseModel):
     program_name: str
-    mission_names: List[str]
+    mission_names: MissionNames
     image_url: str
