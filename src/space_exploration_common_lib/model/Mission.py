@@ -6,9 +6,11 @@ from .Duration import Duration
 
 class Mission(BaseModel):
     mission: str
-    spacecraft_number: int
     call_sign: str
+    program: str
+    image_url: str
     astronaut: str
+    spacecraft_number: int
     launch_time: str
     launch_site: str
     duration: Duration
@@ -17,8 +19,6 @@ class Mission(BaseModel):
     perigee_mi: int
     velocity_max_mph: int
     miss_mi: Decimal
-    program: str
-    image_url: str
 
     def __init__(self, **data):
         if 'miss_mi' in data and isinstance(data['miss_mi'], Decimal128):
