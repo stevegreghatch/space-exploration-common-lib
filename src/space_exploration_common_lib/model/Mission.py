@@ -17,6 +17,7 @@ class Mission(BaseModel):
     perigee_mi: int
     velocity_max_mph: int
     miss_mi: Decimal
+    program: str
     image_url: str
 
     def __init__(self, **data):
