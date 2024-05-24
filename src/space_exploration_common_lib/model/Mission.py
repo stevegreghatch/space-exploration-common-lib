@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from decimal import Decimal
 from bson import Decimal128
-from src.space_exploration_common_lib.model.Duration import Duration
+from .Duration import Duration
 
 
 class Mission(BaseModel):
