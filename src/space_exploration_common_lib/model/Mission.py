@@ -6,7 +6,7 @@ from ..model.Duration import Duration
 
 
 class Mission(BaseModel):
-    mission_name: str
+    mission: str
     astronauts: List[str]
     programs: str
     call_sign: str
