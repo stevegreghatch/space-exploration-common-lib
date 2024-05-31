@@ -10,9 +10,9 @@ class Mission(BaseModel):
     program: str
     call_sign: str
     image_url: str
+    launch_date_utc: datetime
     launch_mass_lbs: int
     launch_site: str
-    launch_date_utc: datetime
     launch_vehicle: str
     orbits: int
     apogee_mi: int
