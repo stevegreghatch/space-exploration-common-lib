@@ -1,4 +1,3 @@
-import datetime
 from pydantic import BaseModel
 from typing import List
 from ..model.Duration import Duration
@@ -18,7 +17,6 @@ class Mission(BaseModel):
     orbits: int
     apogee_nmi: int
     perigee_nmi: int
-    velocity_max_mph: int
     landing_date_utc: str
     landing_site: str
     landing_site_coord: str
