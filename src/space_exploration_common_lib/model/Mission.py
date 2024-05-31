@@ -10,7 +10,7 @@ class Mission(BaseModel):
     program: str
     call_sign: str
     image_url: str
-    launch_date_utc: datetime
+    launch_date_utc: str
     launch_mass_lbs: int
     launch_site: str
     launch_vehicle: str
@@ -18,7 +18,7 @@ class Mission(BaseModel):
     apogee_mi: int
     perigee_mi: int
     velocity_max_mph: int
-    landing_date_utc: datetime
+    landing_date_utc: str
     landing_site: str
     recovery_ship: str
     duration: Duration
