@@ -21,4 +21,4 @@ class Mission(BaseModel):
     landing_site: str
     recovery_ship: str
     duration: Duration
-    distance_traveled: int
+    distance_mi: int
