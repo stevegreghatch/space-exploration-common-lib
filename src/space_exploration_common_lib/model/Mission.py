@@ -13,13 +13,14 @@ class Mission(BaseModel):
     launch_date_utc: str
     launch_mass_lbs: int
     launch_site: str
+    launch_site_coord: str
     launch_vehicle: str
     orbits: int
-    apogee_mi: int
-    perigee_mi: int
+    apogee_nmi: int
+    perigee_nmi: int
     velocity_max_mph: int
     landing_date_utc: str
     landing_site: str
+    landing_site_coord: str
     recovery_ship: str
     duration: Duration
-    distance_mi: int
