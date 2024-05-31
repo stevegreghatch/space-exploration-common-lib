@@ -1,3 +1,4 @@
+import datetime
 from pydantic import BaseModel
 from typing import List
 from ..model.Duration import Duration
@@ -11,13 +12,13 @@ class Mission(BaseModel):
     image_url: str
     launch_mass_lbs: int
     launch_site: str
-    launch_time: str
+    launch_time_utc: datetime
     launch_vehicle: str
     orbits: int
     apogee_mi: int
     perigee_mi: int
     velocity_max_mph: int
-    landing_date: str
+    landing_time_utc: datetime
     landing_site: str
     recovery_ship: str
     duration: Duration
