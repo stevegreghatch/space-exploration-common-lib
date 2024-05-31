@@ -1,7 +1,5 @@
 from pydantic import BaseModel
 from typing import List
-from decimal import Decimal
-from bson import Decimal128
 from ..model.Duration import Duration
 
 
@@ -11,17 +9,16 @@ class Mission(BaseModel):
     program: str
     call_sign: str
     image_url: str
-    spacecraft_number: int
-    launch_time: str
+    launch_mass_lbs: int
     launch_site: str
-    duration: Duration
+    launch_time: str
+    launch_vehicle: str
     orbits: int
     apogee_mi: int
     perigee_mi: int
     velocity_max_mph: int
-    miss_mi: Decimal
-
-    def __init__(self, **data):
-        if 'miss_mi' in data and isinstance(data['miss_mi'], Decimal128):
-            data['miss_mi'] = Decimal(str(data['miss_mi']))
-        super().__init__(**data)
+    landing_date: str
+    landing_site: str
+    recovery_ship: str
+    duration: Duration
+    distance_traveled: int
