@@ -15,8 +15,8 @@ class Mission(BaseModel):
     launch_site_coord: str
     launch_vehicle: str
     orbits: int
-    apogee_nmi: int
-    perigee_nmi: int
+    apogee_km: int
+    perigee_km: int
     landing_date_utc: str
     landing_site: str
     landing_site_coord: str
