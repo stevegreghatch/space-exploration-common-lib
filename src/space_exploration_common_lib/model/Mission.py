@@ -17,6 +17,8 @@ class Mission(BaseModel):
     orbits: int
     apogee_km: int
     perigee_km: int
+    inclination_deg: str
+    period_min: str
     landing_date_utc: str
     landing_site: str
     landing_site_coord: str
