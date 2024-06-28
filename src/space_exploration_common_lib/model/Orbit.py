@@ -2,9 +2,8 @@ from pydantic import BaseModel
 
 
 class Orbit(BaseModel):
-    orbits: int
-    apoapsis_km: int
-    periapsis_km: int
-    inclination_deg: int
-    period_min: int
-
+    orbits: str
+    apoapsis_km: str
+    periapsis_km: str
+    inclination_deg: str
+    period_min: str
