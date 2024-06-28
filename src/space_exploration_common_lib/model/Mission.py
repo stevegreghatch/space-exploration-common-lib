@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import List
 from ..model.Duration import Duration
+from ..model.Orbit import Orbit
 
 
 class Mission(BaseModel):
@@ -14,13 +15,10 @@ class Mission(BaseModel):
     launch_site: str
     launch_site_coord: str
     launch_vehicle: str
-    orbits: int
-    apogee_km: int
-    perigee_km: int
-    inclination_deg: str
-    period_min: str
     landing_date_utc: str
     landing_site: str
     landing_site_coord: str
     recovery_ship: str
     duration: Duration
+    earth_orbit: Orbit
+    target_orbit: Orbit
