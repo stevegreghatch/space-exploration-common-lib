@@ -11,7 +11,7 @@ class Mission(BaseModel):
     call_sign: str
     image_url: str
     launch_date_utc: str
-    launch_mass_lbs: int
+    launch_mass_lbs: str
     launch_site: str
     launch_site_coord: str
     launch_vehicle: str
