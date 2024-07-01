@@ -20,6 +20,4 @@ pip install space-exploration-common-lib
 - **Data Service**: [Space Exploration Data Service](https://github.com/stevegreghatch/Space-Exploration)
 - **UI**: [Space Exploration UI](https://github.com/stevegreghatch/space-exploration-ui)
 
-These links connect to other components of the Space Exploration project, ensuring comprehensive integration and functionality.
-
 For more details and updates, visit the [Space Exploration Common Library PyPi](https://pypi.org/project/space-exploration-common-lib/).
