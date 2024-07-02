@@ -1,14 +1,23 @@
-# space-exploration-common-lib
+# Space Exploration Common Library
 
-## About the application
-sample text
+The Space Exploration Common Library provides Pydantic models for managing data related to space exploration missions, programs, and astronauts. These models ensure structured and validated data representation across various components of the Space Exploration project.
 
-## Available Scripts
+## Usage
 
-#### coverage html
+To use the Space Exploration Common Library in your project, follow these steps:
 
-#### python -m build
+### Installation
 
-#### 'pip install -r requirements.txt'
+Install the library using pip:
 
-#### python -m pytest --cov-report=xml:reports/coverage.xml --cov-report term-missing --cov=src -W ignore
+```sh
+pip install space-exploration-common-lib
+```
+
+## Project Links
+
+- **Persistence Service**: [Space Exploration Persistence Service](https://github.com/stevegreghatch/space-exploration-persistence-service)
+- **Data Service**: [Space Exploration Data Service](https://github.com/stevegreghatch/Space-Exploration)
+- **UI**: [Space Exploration UI](https://github.com/stevegreghatch/space-exploration-ui)
+
+For more details and updates, visit the [Space Exploration Common Library PyPi](https://pypi.org/project/space-exploration-common-lib/).
