@@ -39,7 +39,6 @@ jobs:
             new_version=$(python -c "import semver; print(semver.bump_patch('$latest_version'))")
           fi
           echo "new_version=$new_version" >> $GITHUB_ENV
-          echo "VERSION=$new_version" >> $GITHUB_ENV
 
       - name: Set version environment variable
         run: echo "VERSION=${{ env.new_version }}" > .env
@@ -50,12 +49,16 @@ jobs:
           python setup.py sdist bdist_wheel
 
       - name: Publish to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
+        if: success()
+        run: |
+          python -m pip install --upgrade twine
+          twine upload --repository-url https://upload.pypi.org/legacy/ dist/* -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
 
       - name: Push new tag
         run: |
-          git tag ${{ env.new_version }}
-          git push origin ${{ env.new_version }}
+          if [ -n "${{ env.new_version }}" ]; then
+            git tag ${{ env.new_version }}
+            git push origin ${{ env.new_version }}
+          else
+            echo "No new version tag to push."
+          fi
