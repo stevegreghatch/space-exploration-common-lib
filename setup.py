@@ -9,7 +9,7 @@ setup(
     python_requires='>=3.12, <4',
     include_package_data=True,
     install_requires=[
-        'pydantic==2.8.0'
+        'pydantic==2.8.2'
     ],
     author='Steven Hatch',
     author_email='stevegreghatch@gmail.com',
